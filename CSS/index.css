@@ -8,6 +8,8 @@
 }
 
 body{
+    margin: 0;
+    padding: 0;
     display: grid;
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
@@ -195,10 +197,11 @@ main{
     margin-top: 100px;
 }
 
-.container{
-    margin: 0;
+div.container{
+    width: 100vw;
     padding: 0;
 }
+
 
 .text-title-carousel{
     font-size: 35px;
@@ -221,7 +224,7 @@ main{
 }
 
 .row {
-    margin: 30px 80px;
+    margin: 50px;
     display: inline-block;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -313,6 +316,7 @@ main{
     color: hwb(63 0% 83%);
     border-radius: 20px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .boton-agregar-al-carrito{
@@ -326,6 +330,19 @@ main{
     color: hsla(59, 94%, 50%, 0.546);
     border-radius: 20px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton-comprar:hover{
+    background-color: hwb(59 7% 47% / 0.747);
+    color: #292a06ee;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton-agregar-al-carrito:hover{
+    background-color:rgb(20, 20, 5);
+    color: hwb(59 4% 58% / 0.833);
+    transition: all 0.3s ease-in-out;
 }
 
 .text-2title-carousel{
