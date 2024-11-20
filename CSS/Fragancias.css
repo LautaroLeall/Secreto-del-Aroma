@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+}
+
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*HEADER*/
+
+/*NAVBAR 1 NO TOCAR */
+nav.navbar.bg-body-tertiary{
+    height: auto;
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    border-radius: 50px;
+    display: flex;
+    margin-left: 30px;
+    position: fixed !important;
+    z-index: 1;
+}
+
+#body-header-navbar1{
+    display: flex;
+    width: 100%;
+    height: auto !important;
+    margin: 0;
+    padding: 5px;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.container-fluid{
+    margin-top: -5px;
+    padding: 5px;
+    background-color: hsla(67, 92%, 85%, 0.633);
+    border-radius: 40px;
+    display: flex;
+}
+
+a.navbar-brand{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    margin-left: 100px;
+    color: hwb(62 3% 62%);
+    transition: transform 0.3s ease-in-out;
+}
+
+a.navbar-brand:hover{
+    color: rgb(44, 43, 3);
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+form.d-flex{
+    display: flex;
+    width: auto;
+    height: 40px;
+    margin-left: -10px;
+}
+
+input.form-control.me-2{
+    width: 320px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid rgb(65, 51, 2);
+}
+
+input.form-control.me-2:hover{
+    box-shadow: 0px 0px 100px 15px rgb(65, 51, 2);
+}
+
+input.form-control.me-2:focus{
+    box-shadow: 0px 0px 100px 15px rgb(65, 51, 2);
+}
+
+button.btn.btn-outline-success{
+    display: flex;
+    width: 100px;
+    border-radius: 40px;
+    border: 2px solid rgb(65, 51, 2);
+    color:rgb(65, 51, 2);
+}
+
+button.btn.btn-outline-success:hover{
+    background-color: #41330278;
+}
+
+.icon{
+    display: flex;
+    margin-right: 150px;
+}
+
+.icon a:hover{
+    display: flex;
+    transform: scale(1.1);
+}
+
+box-icon#carrito{
+    width: 30px;
+    height: 30px;
+}
+
+/*NAVBAR 2 NO TOCAR */
+#body-header-navbar2{
+    position: absolute !important;
+    top: 55px;
+    height: 50px;
+    width: 100%;
+    background-color: hsla(88, 45%, 33%, 0.476);
+}
+
+.nav-item{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    height: 100%;
+}
+
+.nav-item .nav-link{
+    color: #333504 !important;
+    font-weight: bold;
+}
+
+.nav-item .nav-link:hover{
+    color: #f8ff39 !important;
+}
+
+.nav-item .nav-link:active{
+    color: #f8ff39 !important;
+}
+
+/* MAIN CARDS*/
+main{
+    margin-top: 100px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: hsla(62, 18%, 70%, 0.85);
+    color: hsl(192, 39%, 23%);
+    padding: 20px 0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .col-md-4 {
+    flex-basis: 25%;
+    margin-bottom: 20px;
+}
+
+.footer h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #f7f30a;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: hsl(192, 39%, 23%);
+}
