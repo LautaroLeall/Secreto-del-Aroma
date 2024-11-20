@@ -441,6 +441,7 @@ ul.img-footer{
     display: block;
     margin-left: 150px;
     transition: all 0.3s ease-in-out;
+    border-radius: 50%;
 }
 
 .footer ul img:hover{
