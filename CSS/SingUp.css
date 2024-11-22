@@ -4,22 +4,30 @@ body {
   }
   
   .container {
-    width: 300px;
-    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    width: 520px;
+    height: 500px;
+    margin: 80px auto;
     padding: 20px;
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
     text-align: center;
-    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   form {
-    margin-top: 20px;
+    display: block;
+    font-size: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   label {
@@ -27,26 +35,55 @@ body {
     margin-bottom: 10px;
   }
   
+#Recordarme{
+    position: relative;
+    left: 50px;
+    top: -28px;
+    font-size: 22px;
+}
+
+#Recordarme-Boton{
+    position: relative;
+    left: 25px;
+    top: -2px;
+}
+
   input[type="text"], input[type="password"] {
-    width: 100%;
+    width: 90%;
     height: 40px;
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
   }
   
   button[type="submit"] {
-    width: 100%;
-    height: 40px;
+    width: 40%;
+    height: 60px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+    font-size: 25px;
   }
   
   button[type="submit"]:hover {
     background-color: #3e8e41;
+    box-shadow: 0 0 10px 5px hsl(122, 93%, 11%);
+  }
+
+  .Iniciar-Sesion{
+    position: relative;
+    top: -50px;
+    left: 250px;
+    cursor: pointer;
+  }
+
+  .Crear-Cuenta{
+    position: relative;
+    right: -10px ;
+    top: -110px;
+    cursor: pointer;
   }
