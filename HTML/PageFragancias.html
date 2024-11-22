@@ -4,80 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfumeria</title>
+    <link rel="icon" href="/ASSETS/ICONO-HEAD.jpg">
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/Fragancias.css">
+      <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- BOOSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
-<body>
-    <header>
+  <body>
+    <header id="body-header">
       <section id="body-header-navbar1">
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a href="/HTML/index.html" class="navbar-brand">
-              Home
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a href="/HTML/index.html" class="navbar-brand">
+            Home
+          </a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="icon">
+            <a href="#">
+              <box-icon id="carrito" name='cart'>
+              </box-icon>
             </a>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-            <div class="icon">
-              <a href="#">
-                <box-icon id="carrito" name='cart'>
-                </box-icon>
-              </a>
-            </div>
           </div>
-        </nav>
+        </div>
+      </nav>
       </section>
       <section>
-        <nav id="body-header-navbar2">
-          <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a href="#" class="nav-link" >Fragrances</a>
-              </li>
-              <li class="nav-item">
-              <a href="#" class="nav-link" >About us</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link" >Sing up</a>
-                </li>
-            </ul>            
-        </nav>
+      <nav id="body-header-navbar2">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a href="/HTML/PageFragancias.html" class="nav-link">Fragrances</a>
+          </li>
+          <li class="nav-item">
+            <a href="/HTML/PageAbout-us.html" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="/HTML/PageSing-up.html" class="nav-link">Sing up</a>
+          </li>
+        </ul>
+      </nav>
       </section>
     </header>
-  <main>
-<div class="container">
-  <header>
-    <h1>Fragancias</h1>
-    <div class="fragancias">
-      <i class="fa-solid fa-bag-shopping"></i>
-      <span class="quantiti">0</span>
-    </div>
-  </header>
+    <main>
+      <div class="container">
+          <h1>Shopping</h1>
+          <div class="shopping">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="quantity">0</span>
+          </div>
+      <div class="list"></div>
+      </div>
 
-  <div class="list"></div>
-</div>
-
-<div class="card">
-  <h1>Card</h1>
-  <ul class="listCard"></ul>
-  <div class="checkOut">
-    <div class="total">0</div>
-    <div class="closefragancias">Close</div>
-  </div>
-</div>
-  </main>
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
+      <div class="card">
+      <h1>Card</h1>
+      <ul class="listCard">
+      </ul>
+      <div class="checkOut">
+          <div class="total">0</div>
+          <div class="closeShopping">Close</div>
+      </div>
+      </div>
+    </main>
+    <footer class="footer">
+    <div class="container">    
+      <div class="row">        
         <div class="col-md-4">
+        <ul class="img-footer">          
+          <a href="#body-header-navbar2" class="arriba">
+          <box-icon name='chevrons-up'></box-icon>
+        </a>
+          <li><img src="/ASSETS/Preview.png" alt=""></li>
+        </ul>
+        </div>
+        <div class="col-md-4">          
+        <div class="container1">
           <h4>Nuestra Tienda</h4>
           <ul>
             <li><a href="#">Sobre nosotros</a></li>
@@ -85,7 +92,9 @@
             <li><a href="#">Política de privacidad</a></li>
           </ul>
         </div>
+        </div>
         <div class="col-md-4">
+        <div class="container2">
           <h4>Categorías</h4>
           <ul>
             <li><a href="#">Perfumes para mujeres</a></li>
@@ -93,18 +102,19 @@
             <li><a href="#">Perfumes unisex</a></li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <ul class="img-footer">
-            <li><img src="/ASSETS/Preview.png" alt=""></li>
-          </ul>
         </div>
-      </div>
-    </div>
-  </footer>
+        <iframe class="mapa"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3561.2583844908045!2d-65.29924366191104!3d-26.79990019585725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942242c6727c6d51%3A0x30188e1f0db587b0!2sCampus%20Universitario%20UNSTA!5e0!3m2!1ses-419!2sar!4v1732221161760!5m2!1ses-419!2sar" 
+      width="100" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+    </div> 
+  </div>
+    </footer>
+    <script src="../JS/index.js"></script>
     <!-- BOOSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
     <!-- BOXICONS -->
-  <!--   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
-   <script src="../JS/index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
