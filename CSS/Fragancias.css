@@ -16,6 +16,7 @@ body{
 }
 
 /*HEADER*/
+
 /*NAVBAR 1 NO TOCAR */
 nav.navbar.bg-body-tertiary{
     height: auto;
@@ -120,7 +121,6 @@ box-icon#carrito{
 /*NAVBAR 2 NO TOCAR */
 #body-header-navbar2{
     position: absolute !important;
-    left: 0;
     top: 55px;
     height: 50px;
     width: 100%;
@@ -147,57 +147,54 @@ box-icon#carrito{
     color: #f8ff39 !important;
 }
 
+
 /* MAIN */ 
- *::after,
+*::after,
 *::before,
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+main{
+    margin-top: 100px;
 }
 
-body{
-    margin: 0 auto;
-    max-width: 2000px;
-    font-family: 'Lato';
-    color: #333;
-}
-
-.icon-cart{
-    width: 40px;
-    height: 40px;
-    stroke: #000;
-}
-
-.icon-cart:hover{
-    cursor: pointer;
-}
-
-img{
-    max-width: 100%;
-}
-
-/* Header */
-header{
+/*HEADER MAIN*/
+header #header-tienda{
     display: flex;
     justify-content: space-between;
-    padding: 30px 0 40px 0;
+}
+
+#header-tienda h1{
+    display: block;
+    width: 200px;
+    font-weight: bold;
+    color: #333504;
+    margin-left: 100px;
 }
 
 .container-icon{
     position: relative;
 }
 
+.icon-cart{
+    position: relative;
+    left: 90%;
+    top: -55px;
+    width: 40px;
+    height: 40px;
+    stroke: #333504;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
 .count-products{
     position: absolute;
-    top: 55%;
-    right: 0;
-
-    background-color: #000;
-    color: #fff;
+    top: -50px;
+    right: 120px;
+    background-color: rgb(243, 255, 5);
+    color: hsl(63, 90%, 4%);
     width: 25px;
     height: 25px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,14 +206,13 @@ header{
 }
 
 .container-cart-products{
-    position: absolute;
-    top: 50px;
+    position: fixed;
+    top: 200px;
     right: 0;
-
-    background-color: #fff;
+    background-color: rgb(243, 255, 5);
     width: 400px;
     z-index: 1;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 10px 20px  #2628026d;
     border-radius: 10px;
     
 }
@@ -226,9 +222,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
 }
 
 .info-cart-product{
@@ -237,19 +231,22 @@ header{
     flex: 0.8;
 }
 
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(63, 90%, 4%)s;
+}
+
 .titulo-producto-carrito{
     font-size: 20px;
+    color: hsl(63, 90%, 4%);
 }
 
 .precio-producto-carrito{
     font-weight: 700;
     font-size: 20px;
     margin-left: 10px;
-}
-
-.cantidad-producto-carrito{
-    font-weight: 400;
-    font-size: 20px;
+    color: hsl(63, 90%, 4%);
 }
 
 .icon-close{
@@ -258,7 +255,7 @@ header{
 }
 
 .icon-close:hover{
-    stroke: red;
+    stroke: hsl(63, 90%, 4%);
     cursor: pointer;
 }
 
@@ -273,57 +270,72 @@ header{
 .cart-total h3{
     font-size: 20px;
     font-weight: 700;
+    color: hsl(63, 90%, 4%);
 }
 
 .total-pagar{
+
     font-size: 20px;
     font-weight: 900;
+    color: hsl(63, 90%, 4%);
+    position: relative;
+    top: -5px;
 }
 
 .hidden-cart{
     display: none;
 }
 
-
-
-
-/* Main */
+/* CARDS MAIN*/
 .container-items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;  
 }
 
 .item{
-    border-radius: 10px;
+    position: relative;
+    left: 25px;
+    display: flex;
+    margin: 10px;
+    width: 90%;
+    border-radius: 80px;
+    border: #41330278 2px solid;
+    box-shadow: 0 0 15px rgba(209, 163, 12, 0.705);
 }
 
 .item:hover{
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 20px 5px hwb(67 4% 35%);
 }
 
 .item img{
-    width: 100%;
-    height: 300px;
+    width: 95%;
+    height: 350px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
-}
-
-.item figure{
-    overflow: hidden;
+    border-radius: 100px;
 }
 
 .item:hover img{
     transform: scale(1.2);
 }
 
+.item figure{
+    overflow: hidden;
+    border-radius: 100px;
+    margin: 20px;
+}
+
 .info-product{
-    padding: 15px 30px;
+    position: relative;
+    top: 50px;
+    padding: 20px 10px;
     line-height: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: hsl(63, 90%, 4%);
 }
 
 .price{
@@ -332,17 +344,18 @@ header{
 }
 
 .info-product button{
+    font-weight: bold;
+    font-size: 18px;
     border: none;
-    background: none;
-    background-color: #000;
-    color: #fff;
+    background-color: hwb(88 18% 52% / 0.476);
+    color: hwb(88 1% 80%);
     padding: 15px 10px;
     cursor: pointer;
 }
 
 /*FOOTER NO TOCAR*/
 .footer {
-    margin-top: 15px 0 0 0;
+    margin: 20px 0 0 0;
     background-color: hsla(62, 18%, 70%, 0.85);
     color: hsl(192, 39%, 23%);
 }
@@ -353,15 +366,17 @@ header{
 }
 
 .footer .row{
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
+    max-width: 100vw;
+    position: inherit;  
     height: 350px;
     margin: 0;
 }
 
 .footer .col-md-4 {
     display: block;
+    justify-content: center;
+    width: 0px;
+    height: auto;
     padding: 30px;
 }
 
@@ -369,7 +384,7 @@ header{
     width: 280px;
     height: auto;
     position: relative;
-    left: -90px;
+    left: 400px;
     top: 50px;
 }
 
@@ -377,7 +392,7 @@ header{
     width: 280px;
     height: auto;
     position: relative;
-    left: -200px;
+    left: 755px;
     top: 50px;
 }
 
@@ -387,7 +402,7 @@ header{
     height: 40px;
     background-color:hwb(62 0% 0%);
     position: absolute;
-    left: 700px;
+    left: 670px;
     transform: translateX(-50%);
     top: -20px;
     border-radius: 50%;
@@ -432,16 +447,17 @@ header{
 }
 
 ul.img-footer{
+    display: block;
     width: 200px;
     height: 200px;
     position: relative;
     top: -20px;
-    left: 80px;
+    left: 150px;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-.footer ul img{
+.footer #footer-img{
     width: 100%;
     height: 100%;
     transition: all 0.3s ease-in-out;
@@ -456,8 +472,9 @@ ul.img-footer{
 
 iframe.mapa{
     position: relative;
-    left: 600px;
-    top: -250px;
-    width: 300px;
-    height: 300px;
+    top: 30px;
+    left: 1120px;
+    display: flex;
+    width: 280px;
+    height: 280px;
 }

@@ -414,7 +414,7 @@ div.container{
     width: 280px;
     height: auto;
     position: relative;
-    left: -10px;
+    left: -20px;
     top: 50px;
 }
 
@@ -422,7 +422,7 @@ div.container{
     width: 280px;
     height: auto;
     position: relative;
-    left: -100px;
+    left: -90px;
     top: 50px;
 }
 
@@ -502,6 +502,7 @@ ul.img-footer{
 
 iframe.mapa{
     position: relative;
+    top: 20px;
     left: -150px;
     display: flex;
     width: 280px;
