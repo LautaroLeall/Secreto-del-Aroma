@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Work Sans';
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     display: grid;
@@ -18,7 +18,7 @@ body{
 /*HEADER*/
 
 /*NAVBAR 1 NO TOCAR */
-nav.navbar.bg-body-tertiary{
+nav.navbar.bg-body-tertiary {
     height: auto;
     width: 95%;
     padding: 0;
@@ -30,7 +30,7 @@ nav.navbar.bg-body-tertiary{
     z-index: 1;
 }
 
-#body-header-navbar1{
+#body-header-navbar1 {
     display: flex;
     width: 100%;
     height: auto !important;
@@ -38,14 +38,14 @@ nav.navbar.bg-body-tertiary{
     padding: 5px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-div.container-fluid{
+div.container-fluid {
     margin-top: -5px;
     padding: 5px;
     background-color: hsla(67, 92%, 85%, 0.633);
@@ -53,7 +53,7 @@ div.container-fluid{
     display: flex;
 }
 
-a.navbar-brand{
+a.navbar-brand {
     font-weight: bold;
     font-size: 20px;
     display: flex;
@@ -62,64 +62,64 @@ a.navbar-brand{
     transition: transform 0.3s ease-in-out;
 }
 
-a.navbar-brand:hover{
+a.navbar-brand:hover {
     color: rgb(44, 43, 3);
     text-decoration: none;
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
 
-form.d-flex{
+form.d-flex {
     display: flex;
     width: auto;
     height: 40px;
     margin-left: -10px;
 }
 
-input.form-control.me-2{
+input.form-control.me-2 {
     width: 320px;
     height: 40px;
     border-radius: 40px;
     border: 2px solid rgb(65, 51, 2);
 }
 
-input.form-control.me-2:hover{
+input.form-control.me-2:hover {
     box-shadow: 0px 0px 100px 15px rgb(65, 51, 2);
 }
 
-input.form-control.me-2:focus{
+input.form-control.me-2:focus {
     box-shadow: 0px 0px 100px 15px rgb(65, 51, 2);
 }
 
-button.btn.btn-outline-success{
+button.btn.btn-outline-success {
     display: flex;
     width: 100px;
     border-radius: 40px;
     border: 2px solid rgb(65, 51, 2);
-    color:rgb(65, 51, 2);
+    color: rgb(65, 51, 2);
 }
 
-button.btn.btn-outline-success:hover{
+button.btn.btn-outline-success:hover {
     background-color: #41330278;
 }
 
-.icon{
+.icon {
     display: flex;
     margin-right: 150px;
 }
 
-.icon a:hover{
+.icon a:hover {
     display: flex;
     transform: scale(1.1);
 }
 
-box-icon#carrito{
+box-icon#carrito {
     width: 30px;
     height: 30px;
 }
 
 /*NAVBAR 2 NO TOCAR */
-#body-header-navbar2{
+#body-header-navbar2 {
     position: absolute !important;
     top: 55px;
     height: 50px;
@@ -127,34 +127,34 @@ box-icon#carrito{
     background-color: hsla(88, 45%, 33%, 0.476);
 }
 
-.nav-item{
+.nav-item {
     padding-left: 40px;
     padding-right: 40px;
     font-size: 18px;
     height: 100%;
 }
 
-.nav-item .nav-link{
+.nav-item .nav-link {
     color: #333504 !important;
     font-weight: bold;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
     color: #f8ff39 !important;
 }
 
-.nav-item .nav-link:active{
+.nav-item .nav-link:active {
     color: #f8ff39 !important;
 }
 
 /*MAIN*/
-main{
+main {
     width: 100%;
     flex: 1;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
-.encabezado{
+.encabezado {
     display: flex;
     position: relative;
     left: 220px;
@@ -163,114 +163,136 @@ main{
     transition: all 0.3s ease-in-out;
 }
 
-.encabezado h2{
+.encabezado h2 {
     font-weight: bold;
     font-size: 35px;
     color: hsl(192, 39%, 23%);
 }
 
-.encabezado h2:hover{
+.encabezado h2:hover {
     filter: drop-shadow(2px 2px 2px #333504);
 }
 
-
-
-#container-cards{
- margin: 10px;
- justify-content: center;
- flex-wrap: wrap;
- margin-bottom: 80px;
- margin-top: 100px;
- position: relative;
+#container-cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: 20px;
 }
 
-.card-lautaro{    
+.card-lautaro {
     display: flex;
     width: 1200px;
-    height: 500px;
+    height: 600px;
     padding: 15px;
-    margin: 100px;
+    margin: 25px;
     border-radius: 20px;
     border: #333504 solid 2px;
     transition: all 0.3s ease-in-out;
 }
 
-.card-lautaro:hover{
+.card-lautaro:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
     box-shadow: #333504 0px 0px 100px 15px;
 }
 
-.card-gonzalo{
+.card-gonzalo {
     display: flex;
     width: 1200px;
-    height: 500px;
+    height: 600px;
     padding: 15px;
-    margin: 80px;
+    margin: 50px 0px;
+    position: relative;
+    left: 25px;
     border-radius: 20px;
     border: #333504 solid 2px;
     transition: all 0.3s ease-in-out;
 }
 
-.card-gonzalo:hover{
+.card-gonzalo:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
     box-shadow: #333504 0px 0px 100px 15px;
 }
 
-.img-card{
+.img-card {
     display: flex;
-    width: 250px;
-    height: 250px;
+    width: 380px;
+    height: 380px;
     margin-right: 20px;
     transition: all 0.3s ease-in-out;
     position: relative;
-    top: 100px;
+    top: 80px;
 }
 
-.img-card:hover{
+.img-card:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
     border-radius: 50%;
 }
 
-.img-card img{
+.img-card img {
     border-radius: 50%;
 }
 
-
-.card-title{
+h5.card-title {
+    color: hsl(192, 39%, 23%);
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    color: hsl(192, 39%, 23%);
 }
 
-.card-text{
+.card-text {
     color: #333504;
     font-size: 17px;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;  
 }
-.redes-sociales{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+hr.separador{
+    color: #585b04;
+    height: 5px;
 }
-.redes {
+
+.objetivo-personal,.objetivo-profesional{
+    color: #333504;
+    font-weight: bold;
+}
+
+.redes-sociales {
+    height: 100px;
+    margin: 20px;
+}
+
+.redes-title {
     font-weight: bold;
     font-size: 20px;
     color: hsl(192, 39%, 23%);
-    margin-right: 10px;
+    text-align: center;
 }
-.icon {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.redes a{
+    position: relative;
+    left: 250px;
+    display: inline-block;
+    text-decoration: none;
+    border: #333504 solid 2px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 15px;
+    font-size: 30px;
+    transition: .3s;
 }
+
+.redes a:hover{
+    background-color: hsla(62, 86%, 11%, 0.465);
+    transition: .3s;
+}
+
 
 /*FOOTER NO TOCAR*/
 .footer {
@@ -284,9 +306,9 @@ main{
     margin: 0;
 }
 
-.footer .row{
+.footer .row {
     max-width: 100vw;
-    position: inherit;  
+    position: inherit;
     height: 350px;
     margin: 0;
 }
@@ -299,7 +321,7 @@ main{
     padding: 30px;
 }
 
-.container1{
+.container1 {
     width: 280px;
     height: auto;
     position: relative;
@@ -307,7 +329,7 @@ main{
     top: 50px;
 }
 
-.container2{
+.container2 {
     width: 280px;
     height: auto;
     position: relative;
@@ -315,11 +337,11 @@ main{
     top: 50px;
 }
 
-.footer .arriba{
+.footer .arriba {
     border: 1px solid hsla(67, 90%, 34%, 0.471);
     width: 40px;
     height: 40px;
-    background-color:hwb(62 0% 0%);
+    background-color: hwb(62 0% 0%);
     position: absolute;
     left: 670px;
     transform: translateX(-50%);
@@ -334,8 +356,8 @@ main{
     box-shadow: 0 0 20px 1px hwb(67 4% 35% / 0.892);
 }
 
-.footer .arriba:hover{
-    cursor: pointer;    
+.footer .arriba:hover {
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 20px 10px #4c5605;
 }
@@ -352,20 +374,20 @@ main{
     text-align: center;
 }
 
-.footer ul a{
+.footer ul a {
     font-size: 20px;
     text-decoration: none;
     color: hwb(61 0% 84%);
     transition: all 0.3s ease-in-out;
 }
 
-.footer ul a:hover{
+.footer ul a:hover {
     font-weight: bold;
     color: hwb(193 0% 85%);
     transition: all 0.3s ease-in-out;
 }
 
-ul.img-footer{
+ul.img-footer {
     display: block;
     width: 200px;
     height: 200px;
@@ -376,20 +398,20 @@ ul.img-footer{
     padding: 0 !important;
 }
 
-.footer ul img{
+.footer ul img {
     width: 100%;
     height: 100%;
     transition: all 0.3s ease-in-out;
     border-radius: 50%;
 }
 
-.footer ul img:hover{
+.footer ul img:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px 50px 10px rgb(65, 51, 2);
 }
 
-iframe.mapa{
+iframe.mapa {
     position: relative;
     top: 30px;
     left: 1120px;
