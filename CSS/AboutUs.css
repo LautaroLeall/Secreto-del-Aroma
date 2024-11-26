@@ -149,6 +149,8 @@ box-icon#carrito{
 
 /*MAIN*/
 main{
+    width: 100%;
+    flex: 1;
     margin-top: 100px;
 }
 
@@ -171,23 +173,23 @@ main{
     filter: drop-shadow(2px 2px 2px #333504);
 }
 
-.container{
-    height: auto;
-    border: #333504 solid 2px;
-    padding: 50px;
-}
+
 
 #container-cards{
-    display: flex;
-    flex-wrap: nowrap;
+ margin: 10px;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin-bottom: 80px;
+ margin-top: 100px;
+ position: relative;
 }
 
 .card-lautaro{    
     display: flex;
-    width: 800px;
-    height: 600px;
+    width: 1200px;
+    height: 500px;
     padding: 15px;
-    margin: 40px;
+    margin: 100px;
     border-radius: 20px;
     border: #333504 solid 2px;
     transition: all 0.3s ease-in-out;
@@ -201,10 +203,10 @@ main{
 
 .card-gonzalo{
     display: flex;
-    width: 800px;
-    height: 600px;
+    width: 1200px;
+    height: 500px;
     padding: 15px;
-    margin: 40px;
+    margin: 80px;
     border-radius: 20px;
     border: #333504 solid 2px;
     transition: all 0.3s ease-in-out;
@@ -223,7 +225,7 @@ main{
     margin-right: 20px;
     transition: all 0.3s ease-in-out;
     position: relative;
-    top: 20px;
+    top: 100px;
 }
 
 .img-card:hover{
@@ -236,9 +238,6 @@ main{
     border-radius: 50%;
 }
 
-.card-body{
-    border: #333504 solid 2px;
-}
 
 .card-title{
     font-weight: bold;
@@ -250,6 +249,27 @@ main{
 .card-text{
     color: #333504;
     font-size: 17px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.redes {
+    font-weight: bold;
+    font-size: 20px;
+    color: hsl(192, 39%, 23%);
+    margin-right: 10px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /*FOOTER NO TOCAR*/
