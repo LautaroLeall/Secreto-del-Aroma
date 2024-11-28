@@ -29,6 +29,12 @@ form {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    font-size: 22px;
+}
+
 label {
     display: block;
     margin-bottom: 10px;
