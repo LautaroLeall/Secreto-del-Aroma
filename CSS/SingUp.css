@@ -35,6 +35,11 @@ label {
   margin-bottom: 10px;
 }
 
+input[type="text"],
+input[type="password"]{
+  font-size: 22px;
+}
+
 #Recordarme {
   position: relative;
   left: 50px;
