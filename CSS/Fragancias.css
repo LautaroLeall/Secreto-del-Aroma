@@ -32,7 +32,7 @@ nav.navbar.bg-body-tertiary{
 
 #body-header-navbar1{
     display: flex;
-    width: 100%;
+    width: 95%;
     height: auto !important;
     margin: 0;
     padding: 5px;
@@ -70,6 +70,8 @@ a.navbar-brand:hover{
 }
 
 form.d-flex{
+    position: relative;
+    left: -595px;
     display: flex;
     width: auto;
     height: 40px;
@@ -103,71 +105,16 @@ button.btn.btn-outline-success:hover{
     background-color: #41330278;
 }
 
-.icon{
-    display: flex;
-    margin-right: 150px;
-}
-
-.icon a:hover{
-    display: flex;
-    transform: scale(1.1);
-}
-
-box-icon#carrito{
-    width: 30px;
-    height: 30px;
-}
-
-/*NAVBAR 2 NO TOCAR */
-#body-header-navbar2{
-    position: absolute !important;
-    top: 55px;
-    height: 50px;
-    width: 100%;
-    background-color: hsla(88, 45%, 33%, 0.476);
-}
-
-.nav-item{
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 18px;
-    height: 100%;
-}
-
-.nav-item .nav-link{
-    color: #333504 !important;
-    font-weight: bold;
-}
-
-.nav-item .nav-link:hover{
-    color: #f8ff39 !important;
-}
-
-.nav-item .nav-link:active{
-    color: #f8ff39 !important;
-}
-
-
-/* MAIN */ 
-*::after,
-*::before,
-
-main{
-    margin-top: 100px;
-}
-
-/*HEADER MAIN*/
-header #header-tienda{
+/*HEADER CARRITO*/
+#header-tienda{
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 #header-tienda h1{
-    display: block;
-    width: 200px;
-    font-weight: bold;
-    color: #c2bf16;
     margin-left: 100px;
+    color: #413302;
 }
 
 .container-icon{
@@ -179,7 +126,7 @@ header #header-tienda{
 .icon-cart{    
     width: 40px;
     position: relative;
-    top: -50px;
+    top: 5px;
     stroke: #333504;
 }
 
@@ -189,10 +136,10 @@ header #header-tienda{
 
 .count-products{
     position: absolute;
-    top: -55px;
+    top: 0px;
     right: -20px;
-    background-color: rgb(243, 255, 5);
-    color: hsl(63, 90%, 4%);
+    background-color: hsl(63, 90%, 4%);
+    color: rgb(242, 255, 0);
     width: 25px;
     height: 25px;
     display: flex;
@@ -285,6 +232,43 @@ header #header-tienda{
     display: none;
 }
 
+/*NAVBAR 2 NO TOCAR */
+#body-header-navbar2{
+    position: absolute !important;
+    top: 55px;
+    height: 50px;
+    width: 100%;
+    background-color: hsla(88, 45%, 33%, 0.476);
+}
+
+.nav-item{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    height: 100%;
+}
+
+.nav-item .nav-link{
+    color: #333504 !important;
+    font-weight: bold;
+}
+
+.nav-item .nav-link:hover{
+    color: #f8ff39 !important;
+}
+
+.nav-item .nav-link:active{
+    color: #f8ff39 !important;
+}
+
+/* MAIN */ 
+*::after,
+*::before,
+
+main{
+    margin-top: 100px;
+}
+
 /* CARDS MAIN*/
 div.container{
     width: 100vw;
@@ -292,7 +276,20 @@ div.container{
     margin: 0;
 }
 
-.text-title-carousel{
+#text-title-carousel{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #c2bf16;
+    position: relative;
+    left: 480px;
+    text-transform: uppercase;
+    display: flex;
+    width: 1000px;
+}
+
+#text-title-carousel2{
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 20px;

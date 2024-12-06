@@ -32,7 +32,7 @@ nav.navbar.bg-body-tertiary{
 
 #body-header-navbar1{
     display: flex;
-    width: 100%;
+    width: 95%;
     height: auto !important;
     margin: 0;
     padding: 5px;
@@ -70,6 +70,8 @@ a.navbar-brand:hover{
 }
 
 form.d-flex{
+    position: relative;
+    left: -50px;
     display: flex;
     width: auto;
     height: 40px;
@@ -103,19 +105,125 @@ button.btn.btn-outline-success:hover{
     background-color: #41330278;
 }
 
-.icon{
+/*HEADER CARRITO*/
+#header-tienda{
     display: flex;
-    margin-right: 150px;
+    justify-content: space-between;
+    z-index: 1;
 }
 
-.icon a:hover{
-    display: flex;
-    transform: scale(1.1);
+.container-icon{
+    position: relative;
+    position: fixed;
+    left: 90%;
 }
 
-box-icon#carrito{
-    width: 30px;
-    height: 30px;
+.icon-cart{    
+    width: 40px;
+    position: relative;
+    top: -20px;
+    stroke: #333504;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+.count-products{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: hsl(63, 90%, 4%);
+    color: rgb(242, 255, 0);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: fixed;
+    right: 0;
+    background-color: rgb(243, 255, 5);
+    width: 400px;
+    z-index: 2;
+    box-shadow: 0 10px 20px  #2628026d;
+    border-radius: 10px;
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(63, 90%, 4%)s;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+    color: hsl(63, 90%, 4%);
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    color: hsl(63, 90%, 4%);
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: hsl(63, 90%, 4%);
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(63, 90%, 4%);
+}
+
+.total-pagar{
+
+    font-size: 20px;
+    font-weight: 900;
+    color: hsl(63, 90%, 4%);
+    position: relative;
+    top: -5px;
+}
+
+.hidden-cart{
+    display: none;
 }
 
 /*NAVBAR 2 NO TOCAR */
@@ -146,7 +254,6 @@ box-icon#carrito{
 .nav-item .nav-link:active{
     color: #f8ff39 !important;
 }
-
 
 /*CARRUSEL NO TOCAR*/
 
