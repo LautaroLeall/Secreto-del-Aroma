@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="body-header">
     <section id="body-header-navbar1">
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
@@ -27,15 +27,59 @@
               Search
             </button>
           </form>
-          <div class="icon">
-            <a href="#">
-              <box-icon id="carrito" name='cart'>
-              </box-icon>
-            </a>
+          <div id="header-tienda">
+            <div class="container-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon-cart"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+              </svg>
+              <div class="count-products">
+                <span id="contador-productos">1</span>
+              </div>
+      
+              <div class="container-cart-products hidden-cart">
+                <div class="cart-product">
+                  <div class="info-cart-product">
+                                  <span class="cantidad-producto-carrito">1</span>
+                                  <p class="titulo-producto-carrito">Perfume</p>
+                                  <span class="precio-producto-carrito">$80</span>
+                              </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-close"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </div>
+                          <div class="cart-total">
+                              <h3>Total:</h3>
+                              <span class="total-pagar">$80</span>
+                          </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
     </section>
+
     <section>
       <nav id="body-header-navbar2">
         <ul class="nav justify-content-center">
@@ -51,6 +95,7 @@
         </ul>
       </nav>
     </section>
+
     <section id="body-header-carrusel">
       <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
@@ -75,7 +120,8 @@
       </div>
     </section>
   </header>
-  <main>
+
+    <main>
     <div class="container">
       <section id="body-header-cards">
         <h1 class="text-title-carousel">Featured fragrances from men's collection</h1>
@@ -282,7 +328,7 @@
           <div class="container1">
             <h4>Nuestra Tienda</h4>
             <ul>
-              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="/HTML/PageAbout-us.html">Sobre nosotros</a></li>
               <li><a href="#">Contacto</a></li>
               <li><a href="#">Política de privacidad</a></li>
             </ul>
@@ -291,10 +337,10 @@
         <div class="col-md-4">
           <div class="container2">
             <h4>Categorías</h4>
-            <ul>
-              <li><a href="#">Perfumes para mujeres</a></li>
-              <li><a href="#">Perfumes para hombres</a></li>
-              <li><a href="#">Perfumes unisex</a></li>
+            <ul>              
+              <li><a href="/HTML/PageFragancias.html#text-title-carousel">Perfumes para hombres</a></li>
+              <li><a href="/HTML/PageFragancias.html#text-title-carousel2">Perfumes para mujeres</a></li>
+              <li><a href="/HTML/PageFragancias.html">Perfumes unisex</a></li>
             </ul>
           </div>
         </div>
@@ -305,12 +351,14 @@
       </div>
     </div>
   </footer>
+  <script src="../JS/index.js"></script>
   <!-- BOOSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <!-- BOXICONS -->
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  
 </body>
 
 </html>
