@@ -152,7 +152,7 @@ button.btn.btn-outline-success:hover{
     right: 0;
     background-color: rgb(243, 255, 5);
     width: 400px;
-    z-index: 2;
+    z-index: 1;
     box-shadow: 0 10px 20px  #2628026d;
     border-radius: 10px;
 }
@@ -309,7 +309,6 @@ div.container{
     padding: 0;
     margin: 0;
 }
-
 
 .text-title-carousel{
     font-size: 35px;

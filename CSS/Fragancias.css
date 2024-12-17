@@ -112,10 +112,6 @@ button.btn.btn-outline-success:hover{
     z-index: 1;
 }
 
-#header-tienda h1{
-    margin-left: 100px;
-    color: #413302;
-}
 
 .container-icon{
     position: relative;
@@ -154,11 +150,11 @@ button.btn.btn-outline-success:hover{
 
 .container-cart-products{
     position: fixed;
+    z-index: 1;
     top: 200px;
     right: 0;
     background-color: rgb(243, 255, 5);
     width: 400px;
-    z-index: 2;
     box-shadow: 0 10px 20px  #2628026d;
     border-radius: 10px;
 }
@@ -269,6 +265,10 @@ main{
     margin-top: 100px;
 }
 
+main h1{
+    margin-left: 100px;
+    color: #413302;
+}
 /* CARDS MAIN*/
 div.container{
     width: 100vw;
