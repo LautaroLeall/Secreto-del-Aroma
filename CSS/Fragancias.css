@@ -71,7 +71,7 @@ a.navbar-brand:hover{
 
 form.d-flex{
     position: relative;
-    left: -50px;
+    left: -595px;
     display: flex;
     width: auto;
     height: 40px;
@@ -112,6 +112,7 @@ button.btn.btn-outline-success:hover{
     z-index: 1;
 }
 
+
 .container-icon{
     position: relative;
     position: fixed;
@@ -121,7 +122,7 @@ button.btn.btn-outline-success:hover{
 .icon-cart{    
     width: 40px;
     position: relative;
-    top: -20px;
+    top: 5px;
     stroke: #333504;
 }
 
@@ -131,7 +132,7 @@ button.btn.btn-outline-success:hover{
 
 .count-products{
     position: absolute;
-    top: -20px;
+    top: 0px;
     right: -20px;
     background-color: hsl(63, 90%, 4%);
     color: rgb(242, 255, 0);
@@ -149,10 +150,11 @@ button.btn.btn-outline-success:hover{
 
 .container-cart-products{
     position: fixed;
+    z-index: 1;
+    top: 200px;
     right: 0;
     background-color: rgb(243, 255, 5);
     width: 400px;
-    z-index: 1;
     box-shadow: 0 10px 20px  #2628026d;
     border-radius: 10px;
 }
@@ -255,62 +257,39 @@ button.btn.btn-outline-success:hover{
     color: #f8ff39 !important;
 }
 
-/*CARRUSEL NO TOCAR*/
+/* MAIN */ 
+*::after,
+*::before,
 
-#carouselExampleRide{
-    display: flex;
-    bottom: -100px;
-    width: 100%;
-    height: 400px;
-    border-radius: 50px;
-}
-
-.carousel-inner{
-    display: flex;
-    bottom: 0;
-    width: 100%;
-    height: 400px;
-}
-
-.carrusel-img{
-    display: flex;
-    width: 100%;
-    height: 400px;
-}
-
-.carousel-item.active{
-    display: flex;
-    width: 100%;
-    height: 400px;
-}
-
-.carousel-control-prev{
-    display: flex;
-    top: 90px !important;
-    width: 500px;
-    height: 200px !important;
-
-}
-
-.carousel-control-next{
-    display: flex;
-    top: 90px !important;
-    width: 500px;
-    height: 200px !important;
-}
-
-/* MAIN CARDS*/
 main{
     margin-top: 100px;
 }
 
+main h1{
+    margin-left: 100px;
+    color: #413302;
+}
+/* CARDS MAIN*/
 div.container{
     width: 100vw;
     padding: 0;
     margin: 0;
 }
 
-.text-title-carousel{
+#text-title-carousel{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #c2bf16;
+    position: relative;
+    left: 480px;
+    text-transform: uppercase;
+    display: flex;
+    width: 1000px;
+}
+
+#text-title-carousel2{
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 20px;
